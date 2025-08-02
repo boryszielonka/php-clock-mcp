@@ -1,0 +1,8 @@
+mcp:
+    app: 'php-clock-mcp'
+    version: '0.0.1'
+    page_size: 20
+
+    client_transports:
+        stdio: true # Enable STDIO via command
+        sse: true # Enable Server-Sent Event via controller

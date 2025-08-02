@@ -1,0 +1,82 @@
+# Dependencies
+/vendor/
+composer.phar
+
+# Environment files
+.env
+.env.local
+.env.local.php
+.env.*.local
+
+# Symfony cache and logs
+/var/cache/
+/var/log/
+/var/sessions/
+
+# Build artifacts and temporary files
+/build/
+/public/build/
+/public/bundles/
+/public/uploads/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# PHP CS Fixer
+.php-cs-fixer.cache
+.php-cs-fixer.php.cache
+
+# PHPUnit
+/phpunit.xml
+.phpunit.result.cache
+/coverage/
+
+# PHPStan
+phpstan.neon.local
+.phpstan.cache
+
+# Composer
+composer.lock.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Scratch/development files
+.scratches/
+/scratch/
+/temp/
+/tmp/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Local configuration overrides
+/config/secrets/prod/
+/public/uploads/

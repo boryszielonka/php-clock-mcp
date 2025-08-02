@@ -1,0 +1,14 @@
+.git
+.gitignore
+.scratches/*
+.dockerignore
+var/cache/*
+var/log/*
+var/sessions/*
+.env.local
+.env.*.local
+vendor/
+node_modules/
+tests/
+.idea/
+.vscode/

@@ -1,0 +1,26 @@
+security:
+    # Password hashers (not needed for stateless API but required for config)
+    password_hashers:
+        App\Security\MockUser: 'plaintext'
+
+    providers:
+        users_in_memory: { memory: null }
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+            
+        api:
+            pattern: ^/api
+            stateless: true
+            access_token:
+                token_handler: App\Service\TokenService
+            
+        main:
+            lazy: true
+            provider: users_in_memory
+
+    access_control:
+        - { path: ^/api/token, roles: PUBLIC_ACCESS }
+        - { path: ^/api, roles: ROLE_USER }
