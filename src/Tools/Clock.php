@@ -126,6 +126,7 @@ readonly class Clock implements MetadataInterface, ToolExecutorInterface
         }
     }
 
+    // TODO
     private function createRateLimitErrorResponse(string $userId): array
     {
         $headers = $this->rateLimiter->getRateLimitHeaders($userId);
