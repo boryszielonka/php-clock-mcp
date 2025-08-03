@@ -1,4 +1,4 @@
-# PHP Clock MCP
+# PHP Clock MCP - quick proof of concept
 I used [Symfony MCP Bundle](https://github.com/symfony/ai/blob/main/src/mcp-bundle/README.md) and [Symfony Clock](https://github.com/symfony/clock)
 for creating lightweight MCP server.
 
